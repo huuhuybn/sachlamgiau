@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo Favicon</title>
+</head>
+<body>
+    <h1>Tạo Favicon cho Website</h1>
+    <p>Click vào các button bên dưới để tạo favicon:</p>
+    
+    <button onclick="createFavicon(16)">Tạo favicon-16x16.png</button>
+    <button onclick="createFavicon(32)">Tạo favicon-32x32.png</button>
+    <button onclick="createFavicon(180)">Tạo apple-touch-icon.png</button>
+    
+    <canvas id="canvas" style="border: 1px solid #ccc; margin: 20px;"></canvas>
+    
+    <script>
+        function createFavicon(size) {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Set canvas size
+            canvas.width = size;
+            canvas.height = size;
+            
+            // Background gradient
+            const gradient = ctx.createLinearGradient(0, 0, size, size);
+            gradient.addColorStop(0, '#667eea');
+            gradient.addColorStop(1, '#764ba2');
+            
+            // Draw background
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, size, size);
+            
+            // Draw book
+            const bookWidth = size * 0.6;
+            const bookHeight = size * 0.7;
+            const bookX = (size - bookWidth) / 2;
+            const bookY = (size - bookHeight) / 2;
+            
+            // Book cover
+            ctx.fillStyle = '#FFD700';
+            ctx.fillRect(bookX, bookY, bookWidth, bookHeight);
+            ctx.strokeStyle = '#8B4513';
+            ctx.lineWidth = size * 0.02;
+            ctx.strokeRect(bookX, bookY, bookWidth, bookHeight);
+            
+            // Book pages
+            ctx.fillStyle = '#FFF8DC';
+            ctx.fillRect(bookX + size * 0.03, bookY + size * 0.03, 
+                        bookWidth - size * 0.06, bookHeight - size * 0.06);
+            
+            // Page lines
+            ctx.strokeStyle = '#8B4513';
+            ctx.lineWidth = size * 0.01;
+            for (let i = 1; i <= 4; i++) {
+                const y = bookY + (bookHeight * i / 5);
+                ctx.beginPath();
+                ctx.moveTo(bookX + size * 0.1, y);
+                ctx.lineTo(bookX + bookWidth - size * 0.1, y);
+                ctx.stroke();
+            }
+            
+            // Roman coin
+            const coinSize = size * 0.15;
+            const coinX = bookX + bookWidth + size * 0.05;
+            const coinY = bookY + size * 0.1;
+            
+            ctx.fillStyle = '#C0C0C0';
+            ctx.beginPath();
+            ctx.arc(coinX, coinY, coinSize, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.strokeStyle = '#696969';
+            ctx.lineWidth = size * 0.01;
+            ctx.stroke();
+            
+            // SPQR text
+            ctx.fillStyle = '#2C3E50';
+            ctx.font = `bold ${size * 0.08}px serif`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('SPQR', coinX, coinY);
+            
+            // Download the image
+            const link = document.createElement('a');
+            link.download = `favicon-${size}x${size}.png`;
+            link.href = canvas.toDataURL();
+            link.click();
+            
+            console.log(`✅ Đã tạo favicon-${size}x${size}.png`);
+        }
+        
+        // Auto-create all favicons when page loads
+        window.onload = function() {
+            setTimeout(() => {
+                createFavicon(16);
+                setTimeout(() => createFavicon(32), 500);
+                setTimeout(() => createFavicon(180), 1000);
+            }, 1000);
+        };
+    </script>
+</body>
+</html> 

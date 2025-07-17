@@ -1,0 +1,122 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "Con Đường Đến Giàu Có - Những bài học từ Đế chế La Mã Cổ đại",
+  "alternateName": "Sách Làm Giàu",
+  "description": "Khám phá 10 bài học làm giàu từ Đế chế La Mã Cổ đại. Từ Romulus đến Constantine, học hỏi chiến lược kinh doanh, quản lý tài chính và xây dựng đế chế thương mại.",
+  "url": "https://huuhuybn.github.io/sachlamgiau/",
+  "author": {
+    "@type": "Person",
+    "name": "Nguyễn Hữu Huy",
+    "url": "https://dotplays.com",
+    "jobTitle": "Tác giả",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Dotplays.com"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dotplays.com",
+    "url": "https://dotplays.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://huuhuybn.github.io/sachlamgiau/favicon.svg"
+    }
+  },
+  "datePublished": "2024-12-19",
+  "dateModified": "2024-12-19",
+  "inLanguage": "vi",
+  "isbn": "978-0-000000-0-0",
+  "numberOfPages": "10",
+  "genre": ["Business", "Self-Help", "History", "Education"],
+  "keywords": "làm giàu, kinh doanh, La Mã cổ đại, chiến lược, đầu tư, quản lý tài chính, marketing, leadership, entrepreneurship, wealth building",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Business professionals, Entrepreneurs, Students"
+  },
+  "educationalLevel": "Intermediate",
+  "learningResourceType": "Book",
+  "teaches": [
+    "Business Strategy",
+    "Financial Management", 
+    "Leadership",
+    "Marketing",
+    "Investment",
+    "Crisis Management",
+    "Brand Building",
+    "Human Resource Management"
+  ],
+  "hasPart": [
+    {
+      "@type": "Chapter",
+      "name": "Thành Lập Và Kiên Trì",
+      "description": "Câu chuyện về Romulus và Remus - bài học về tầm nhìn và kiên trì"
+    },
+    {
+      "@type": "Chapter", 
+      "name": "Chiến Lược Và Lập Kế Hoạch",
+      "description": "Câu chuyện về Hannibal - nghệ thuật lập kế hoạch dài hạn"
+    },
+    {
+      "@type": "Chapter",
+      "name": "Quản Lý Tài Chính Thông Minh", 
+      "description": "Câu chuyện về Crassus - nghệ thuật đầu tư và đa dạng hóa"
+    },
+    {
+      "@type": "Chapter",
+      "name": "Xây Dựng Mối Quan Hệ",
+      "description": "Câu chuyện về Julius Caesar - nghệ thuật networking"
+    },
+    {
+      "@type": "Chapter",
+      "name": "Đổi Mới Và Thích Nghi",
+      "description": "Câu chuyện về Augustus - khả năng thích nghi và đổi mới"
+    },
+    {
+      "@type": "Chapter",
+      "name": "Quản Lý Nhân Sự",
+      "description": "Câu chuyện về Trajan - tuyển dụng và phát triển nhân tài"
+    },
+    {
+      "@type": "Chapter",
+      "name": "Mở Rộng Thị Trường",
+      "description": "Câu chuyện về Hadrian - chiến lược thâm nhập thị trường mới"
+    },
+    {
+      "@type": "Chapter",
+      "name": "Quản Lý Khủng Hoảng",
+      "description": "Câu chuyện về Marcus Aurelius - xử lý khủng hoảng hiệu quả"
+    },
+    {
+      "@type": "Chapter",
+      "name": "Xây Dựng Thương Hiệu",
+      "description": "Câu chuyện về Constantine - tạo dựng danh tiếng và uy tín"
+    },
+    {
+      "@type": "Chapter",
+      "name": "Di Sản Và Tương Lai",
+      "description": "Câu chuyện về Justinian - lập kế hoạch kế nhiệm và bảo tồn"
+    }
+  ],
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Độc giả"
+    },
+    "reviewBody": "Cuốn sách tuyệt vời với những bài học thực tế từ lịch sử La Mã cổ đại."
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "VND",
+    "availability": "https://schema.org/InStock",
+    "url": "https://huuhuybn.github.io/sachlamgiau/"
+  }
+} 

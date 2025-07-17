@@ -1,0 +1,30 @@
+{
+    "name": "Con Đường Đến Giàu Có",
+    "short_name": "Sách Làm Giàu",
+    "description": "Những bài học từ Đế chế La Mã Cổ đại",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#667eea",
+    "theme_color": "#667eea",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ],
+    "categories": ["business", "education", "books"],
+    "lang": "vi",
+    "dir": "ltr"
+} 

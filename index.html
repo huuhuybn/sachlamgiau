@@ -1362,5 +1362,11 @@
             </div>
         </div>
     </div>
+    <script>
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            document.querySelector('.hamburger').classList.remove('active');
+            document.querySelector('.nav-menu').classList.remove('active');
+        }));
+    </script>
 </body>
 </html> 

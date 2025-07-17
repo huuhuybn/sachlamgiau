@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Con Đường Đến Giàu Có - Những bài học từ Đế chế La Mã Cổ đại</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .author {
+            font-size: 1.1rem;
+            color: #34495e;
+            font-weight: 600;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #95a5a6;
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+
+        .chapters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .chapter-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .chapter-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .chapter-number {
+            font-size: 0.9rem;
+            color: #3498db;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .chapter-title {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .chapter-subtitle {
+            font-size: 1rem;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+
+        .chapter-description {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2rem;
+            }
+            
+            .chapters-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">CON ĐƯỜNG ĐẾN GIÀU CÓ</h1>
+            <p class="subtitle">Những bài học từ Đế chế La Mã Cổ đại</p>
+            <p class="author">Tác giả: Nguyễn Hữu Huy - Dotplays.com</p>
+            <p class="quote">"Lịch sử không lặp lại, nhưng nó thường có vần điệu tương tự" — Mark Twain</p>
+        </div>
+
+        <div class="chapters-grid">
+            <div class="chapter-card" onclick="window.location.href='chuong-1-thanh-lap-va-kien-tri.html'">
+                <div class="chapter-number">CHƯƠNG 1</div>
+                <h3 class="chapter-title">THÀNH LẬP VÀ KIÊN TRÌ</h3>
+                <p class="chapter-subtitle">Câu chuyện về Romulus và Remus</p>
+                <p class="chapter-description">Khám phá bài học về tầm nhìn rõ ràng và sự kiên trì trong việc xây dựng nền tảng vững chắc cho thành công.</p>
+            </div>
+
+            <div class="chapter-card" onclick="window.location.href='chuong-2-chien-luoc-va-lap-ke-hoach.html'">
+                <div class="chapter-number">CHƯƠNG 2</div>
+                <h3 class="chapter-title">CHIẾN LƯỢC VÀ LẬP KẾ HOẠCH</h3>
+                <p class="chapter-subtitle">Câu chuyện về Hannibal và chiến dịch vượt Alps</p>
+                <p class="chapter-description">Học hỏi nghệ thuật lập kế hoạch dài hạn và tầm quan trọng của sự chuẩn bị kỹ lưỡng.</p>
+            </div>
+
+            <div class="chapter-card" onclick="window.location.href='chuong-3-quan-ly-tai-chinh-thong-minh.html'">
+                <div class="chapter-number">CHƯƠNG 3</div>
+                <h3 class="chapter-title">QUẢN LÝ TÀI CHÍNH THÔNG MINH</h3>
+                <p class="chapter-subtitle">Câu chuyện về Marcus Licinius Crassus</p>
+                <p class="chapter-description">Khám phá nghệ thuật đầu tư và đa dạng hóa, quản lý dòng tiền hiệu quả.</p>
+            </div>
+
+            <div class="chapter-card" onclick="window.location.href='chuong-4-xay-dung-moi-quan-he.html'">
+                <div class="chapter-number">CHƯƠNG 4</div>
+                <h3 class="chapter-title">XÂY DỰNG MỐI QUAN HỆ</h3>
+                <p class="chapter-subtitle">Câu chuyện về Julius Caesar và nghệ thuật ngoại giao</p>
+                <p class="chapter-description">Học hỏi tầm quan trọng của networking và nghệ thuật thuyết phục.</p>
+            </div>
+
+            <div class="chapter-card" onclick="window.location.href='chuong-5-doi-moi-va-thich-nghi.html'">
+                <div class="chapter-number">CHƯƠNG 5</div>
+                <h3 class="chapter-title">ĐỔI MỚI VÀ THÍCH NGHI</h3>
+                <p class="chapter-subtitle">Câu chuyện về Augustus và cải cách hệ thống</p>
+                <p class="chapter-description">Khám phá khả năng thích nghi với thay đổi và đổi mới trong mô hình kinh doanh.</p>
+            </div>
+
+            <div class="chapter-card" onclick="window.location.href='chuong-6-quan-ly-nhan-su.html'">
+                <div class="chapter-number">CHƯƠNG 6</div>
+                <h3 class="chapter-title">QUẢN LÝ NHÂN SỰ</h3>
+                <p class="chapter-subtitle">Câu chuyện về Trajan và chính sách nhân tài</p>
+                <p class="chapter-description">Học hỏi về tuyển dụng và phát triển nhân tài, xây dựng văn hóa doanh nghiệp.</p>
+            </div>
+
+            <div class="chapter-card" onclick="window.location.href='chuong-7-mo-rong-thi-truong.html'">
+                <div class="chapter-number">CHƯƠNG 7</div>
+                <h3 class="chapter-title">MỞ RỘNG THỊ TRƯỜNG</h3>
+                <p class="chapter-subtitle">Câu chuyện về Hadrian và chính sách mở rộng</p>
+                <p class="chapter-description">Khám phá chiến lược thâm nhập thị trường mới và địa phương hóa sản phẩm.</p>
+            </div>
+
+            <div class="chapter-card" onclick="window.location.href='chuong-8-quan-ly-khung-hoang.html'">
+                <div class="chapter-number">CHƯƠNG 8</div>
+                <h3 class="chapter-title">QUẢN LÝ KHỦNG HOẢNG</h3>
+                <p class="chapter-subtitle">Câu chuyện về Marcus Aurelius và đối phó với dịch bệnh</p>
+                <p class="chapter-description">Học hỏi xử lý khủng hoảng hiệu quả và duy trì ổn định trong thời kỳ khó khăn.</p>
+            </div>
+
+            <div class="chapter-card" onclick="window.location.href='chuong-9-xay-dung-thuong-hieu.html'">
+                <div class="chapter-number">CHƯƠNG 9</div>
+                <h3 class="chapter-title">XÂY DỰNG THƯƠNG HIỆU</h3>
+                <p class="chapter-subtitle">Câu chuyện về Constantine và sự thay đổi tôn giáo</p>
+                <p class="chapter-description">Khám phá tạo dựng danh tiếng và uy tín, thay đổi nhận thức thị trường.</p>
+            </div>
+
+            <div class="chapter-card" onclick="window.location.href='chuong-10-di-san-va-tuong-lai.html'">
+                <div class="chapter-number">CHƯƠNG 10</div>
+                <h3 class="chapter-title">DI SẢN VÀ TƯƠNG LAI</h3>
+                <p class="chapter-subtitle">Câu chuyện về Justinian và bảo tồn di sản</p>
+                <p class="chapter-description">Học hỏi lập kế hoạch kế nhiệm và bảo tồn, phát triển tài sản.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 Nguyễn Hữu Huy - <a href="https://dotplays.com" target="_blank">Dotplays.com</a></p>
+            <p>"Nơi kiến thức gặp gỡ sự sáng tạo"</p>
+        </div>
+    </div>
+</body>
+</html> 

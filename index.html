@@ -920,453 +920,65 @@
                 padding: 30px 20px;
             }
         }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 4px;
+            }
+            .header {
+                padding: 20px 4px;
+            }
+            .title {
+                font-size: 1.5rem;
+            }
+            .subtitle, .author, .quote {
+                font-size: 1rem;
+            }
+            .hero-content, .hero-image, .about-section, .chapters-section, .author-section, .testimonials, .contact-section, .footer-content {
+                padding: 10px 4px !important;
+            }
+            .hero {
+                gap: 10px;
+            }
+            .about-content, .author-content, .chapters-grid, .testimonials-grid, .footer-content {
+                grid-template-columns: 1fr !important;
+                gap: 10px !important;
+            }
+            .chapter-card, .testimonial {
+                padding: 10px 4px;
+            }
+            .section-title {
+                font-size: 1.2rem;
+            }
+            .stat-number {
+                font-size: 1.2rem;
+            }
+            .stat-label {
+                font-size: 0.7rem;
+            }
+            .book-cover {
+                width: 120px;
+                height: 160px;
+                font-size: 1.2rem;
+            }
+            .book-preview {
+                width: 120px;
+                height: 180px;
+            }
+            .page {
+                width: 100px;
+                height: 160px;
+            }
+            .author-avatar {
+                width: 80px;
+                height: 80px;
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Navigation Menu -->
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <a href="index.html">
-                        <span class="logo-icon">📚</span>
-                        <span class="logo-text">Sách Làm Giàu</span>
-                    </a>
-                </div>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link active">🏠 Trang Chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">📖 Giới Thiệu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#chapters" class="nav-link">📋 Mục Lục</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#author" class="nav-link">✍️ Tác Giả</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">📧 Liên Hệ</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Header -->
-        <div class="header">
-            <div class="header-content">
-                <div class="book-badge">📚 SÁCH MIỄN PHÍ</div>
-                <h1 class="title">CON ĐƯỜNG ĐẾN GIÀU CÓ</h1>
-                <p class="subtitle">Những bài học từ Đế chế La Mã Cổ đại</p>
-                <p class="author">Tác giả: Nguyễn Hữu Huy - Dotplays.com</p>
-                <p class="quote">"Lịch sử không lặp lại, nhưng nó thường có vần điệu tương tự" — Mark Twain</p>
-            </div>
-        </div>
-
-        <!-- Hero Section -->
-        <div class="hero">
-            <div class="hero-content">
-                <h2 class="hero-title">Khám Phá Bí Mật Làm Giàu Từ Lịch Sử</h2>
-                <p class="hero-description">
-                    Cuốn sách độc đáo này sẽ đưa bạn vào hành trình khám phá 10 bài học làm giàu từ Đế chế La Mã Cổ đại. 
-                    Từ Romulus đến Constantine, mỗi câu chuyện lịch sử đều ẩn chứa những bài học kinh doanh quý giá.
-                </p>
-                
-                <ul class="features">
-                    <li>10 chương với 10 câu chuyện lịch sử hấp dẫn</li>
-                    <li>Bài học kinh doanh thực tế từ các nhân vật lịch sử</li>
-                    <li>Nguyên tắc thực hành và bài tập áp dụng</li>
-                    <li>Câu chuyện hiện đại tương ứng với mỗi bài học</li>
-                    <li>Kế hoạch hành động 90 ngày chi tiết</li>
-                </ul>
-
-                <a href="index.html" class="cta-button">ĐỌC NGAY MIỄN PHÍ</a>
-            </div>
-
-            <div class="hero-image">
-                <div class="book-cover">📖</div>
-                <h3 style="color: #2c3e50; margin-bottom: 10px;">Sách Làm Giàu</h3>
-                <p style="color: #7f8c8d; margin-bottom: 20px;">Từ Lịch Sử Đến Thành Công</p>
-                
-                <div class="stats">
-                    <div class="stat">
-                        <div class="stat-number">10</div>
-                        <div class="stat-label">Chương</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">90</div>
-                        <div class="stat-label">Ngày Hành Động</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">0₫</div>
-                        <div class="stat-label">Miễn Phí</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- About Section -->
-        <div id="about" class="about-section">
-            <h2 class="section-title">📖 Giới Thiệu Sách</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Cuốn Sách Độc Đáo Về Làm Giàu</h3>
-                    <p>
-                        "Con Đường Đến Giàu Có" không phải là một cuốn sách kinh doanh thông thường. 
-                        Đây là một hành trình khám phá những bài học làm giàu từ Đế chế La Mã Cổ đại - 
-                        một trong những nền văn minh vĩ đại nhất trong lịch sử nhân loại.
-                    </p>
-                    <p>
-                        Từ Romulus và Remus đến Constantine, mỗi câu chuyện lịch sử đều ẩn chứa những 
-                        bài học kinh doanh quý giá mà bạn có thể áp dụng ngay vào thực tế.
-                    </p>
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <span class="feature-icon">🎯</span>
-                            <div>
-                                <h4>10 Bài Học Thực Tế</h4>
-                                <p>Mỗi chương là một bài học kinh doanh cụ thể</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">📚</span>
-                            <div>
-                                <h4>Lịch Sử Sống Động</h4>
-                                <p>Câu chuyện lịch sử hấp dẫn và dễ hiểu</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">💡</span>
-                            <div>
-                                <h4>Áp Dụng Ngay</h4>
-                                <p>Bài tập và kế hoạch hành động chi tiết</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="book-preview">
-                        <div class="book-spine"></div>
-                        <div class="book-pages">
-                            <div class="page"></div>
-                            <div class="page"></div>
-                            <div class="page"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Chapters Preview -->
-        <div id="chapters" class="chapters-section">
-            <h2 class="section-title">📋 Mục Lục Sách</h2>
-            <div class="chapters-grid">
-                <div class="chapter-card" onclick="window.location.href='chuong-1-thanh-lap-va-kien-tri.html'">
-                    <div class="chapter-number">CHƯƠNG 1</div>
-                    <h3 class="chapter-title">THÀNH LẬP VÀ KIÊN TRÌ</h3>
-                    <p class="chapter-subtitle">Câu chuyện về Romulus và Remus</p>
-                    <p class="chapter-description">Khám phá bài học về tầm nhìn rõ ràng và sự kiên trì trong việc xây dựng nền tảng vững chắc cho thành công.</p>
-                </div>
-
-                <div class="chapter-card" onclick="window.location.href='chuong-2-chien-luoc-va-lap-ke-hoach.html'">
-                    <div class="chapter-number">CHƯƠNG 2</div>
-                    <h3 class="chapter-title">CHIẾN LƯỢC VÀ LẬP KẾ HOẠCH</h3>
-                    <p class="chapter-subtitle">Câu chuyện về Hannibal và chiến dịch vượt Alps</p>
-                    <p class="chapter-description">Học hỏi nghệ thuật lập kế hoạch dài hạn và tầm quan trọng của sự chuẩn bị kỹ lưỡng.</p>
-                </div>
-
-                <div class="chapter-card" onclick="window.location.href='chuong-3-quan-ly-tai-chinh-thong-minh.html'">
-                    <div class="chapter-number">CHƯƠNG 3</div>
-                    <h3 class="chapter-title">QUẢN LÝ TÀI CHÍNH THÔNG MINH</h3>
-                    <p class="chapter-subtitle">Câu chuyện về Marcus Licinius Crassus</p>
-                    <p class="chapter-description">Khám phá nghệ thuật đầu tư và đa dạng hóa, quản lý dòng tiền hiệu quả.</p>
-                </div>
-
-                <div class="chapter-card" onclick="window.location.href='chuong-4-xay-dung-moi-quan-he.html'">
-                    <div class="chapter-number">CHƯƠNG 4</div>
-                    <h3 class="chapter-title">XÂY DỰNG MỐI QUAN HỆ</h3>
-                    <p class="chapter-subtitle">Câu chuyện về Julius Caesar và nghệ thuật ngoại giao</p>
-                    <p class="chapter-description">Học hỏi tầm quan trọng của networking và nghệ thuật thuyết phục.</p>
-                </div>
-
-                <div class="chapter-card" onclick="window.location.href='chuong-5-doi-moi-va-thich-nghi.html'">
-                    <div class="chapter-number">CHƯƠNG 5</div>
-                    <h3 class="chapter-title">ĐỔI MỚI VÀ THÍCH NGHI</h3>
-                    <p class="chapter-subtitle">Câu chuyện về Augustus và cải cách hệ thống</p>
-                    <p class="chapter-description">Khám phá khả năng thích nghi với thay đổi và đổi mới trong mô hình kinh doanh.</p>
-                </div>
-
-                <div class="chapter-card" onclick="window.location.href='chuong-6-quan-ly-nhan-su.html'">
-                    <div class="chapter-number">CHƯƠNG 6</div>
-                    <h3 class="chapter-title">QUẢN LÝ NHÂN SỰ</h3>
-                    <p class="chapter-subtitle">Câu chuyện về Trajan và chính sách nhân tài</p>
-                    <p class="chapter-description">Học hỏi về tuyển dụng và phát triển nhân tài, xây dựng văn hóa doanh nghiệp.</p>
-                </div>
-
-                <div class="chapter-card" onclick="window.location.href='chuong-7-mo-rong-thi-truong.html'">
-                    <div class="chapter-number">CHƯƠNG 7</div>
-                    <h3 class="chapter-title">MỞ RỘNG THỊ TRƯỜNG</h3>
-                    <p class="chapter-subtitle">Câu chuyện về Hadrian và chính sách mở rộng</p>
-                    <p class="chapter-description">Khám phá chiến lược thâm nhập thị trường mới và địa phương hóa sản phẩm.</p>
-                </div>
-
-                <div class="chapter-card" onclick="window.location.href='chuong-8-quan-ly-khung-hoang.html'">
-                    <div class="chapter-number">CHƯƠNG 8</div>
-                    <h3 class="chapter-title">QUẢN LÝ KHỦNG HOẢNG</h3>
-                    <p class="chapter-subtitle">Câu chuyện về Marcus Aurelius và đối phó với dịch bệnh</p>
-                    <p class="chapter-description">Học hỏi xử lý khủng hoảng hiệu quả và duy trì ổn định trong thời kỳ khó khăn.</p>
-                </div>
-
-                <div class="chapter-card" onclick="window.location.href='chuong-9-xay-dung-thuong-hieu.html'">
-                    <div class="chapter-number">CHƯƠNG 9</div>
-                    <h3 class="chapter-title">XÂY DỰNG THƯƠNG HIỆU</h3>
-                    <p class="chapter-subtitle">Câu chuyện về Constantine và sự thay đổi tôn giáo</p>
-                    <p class="chapter-description">Khám phá tạo dựng danh tiếng và uy tín, thay đổi nhận thức thị trường.</p>
-                </div>
-
-                <div class="chapter-card" onclick="window.location.href='chuong-10-di-san-va-tuong-lai.html'">
-                    <div class="chapter-number">CHƯƠNG 10</div>
-                    <h3 class="chapter-title">DI SẢN VÀ TƯƠNG LAI</h3>
-                    <p class="chapter-subtitle">Câu chuyện về Justinian và bảo tồn di sản</p>
-                    <p class="chapter-description">Học hỏi lập kế hoạch kế nhiệm và bảo tồn, phát triển tài sản.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Author Section -->
-        <div id="author" class="author-section">
-            <h2 class="section-title">✍️ Tác Giả</h2>
-            <div class="author-content">
-                <div class="author-image">
-                    <div class="author-avatar">
-                        <span style="font-size: 4rem;">👨‍💻</span>
-                    </div>
-                </div>
-                <div class="author-info">
-                    <h3>Nguyễn Hữu Huy</h3>
-                    <p class="author-title">Tác giả & Chuyên gia Phát triển Web</p>
-                    <p class="author-description">
-                        Với hơn 10 năm kinh nghiệm trong lĩnh vực công nghệ và kinh doanh, 
-                        tôi đam mê chia sẻ kiến thức và giúp mọi người thành công. 
-                        Cuốn sách này là kết quả của quá trình nghiên cứu và áp dụng 
-                        những bài học từ lịch sử vào thực tế kinh doanh hiện đại.
-                    </p>
-                    <div class="author-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Năm Kinh Nghiệm</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">Dự Án Thành Công</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">1000+</span>
-                            <span class="stat-label">Học Viên</span>
-                        </div>
-                    </div>
-                    <div class="author-links">
-                        <a href="https://dotplays.com" target="_blank" class="author-link">
-                            🌐 Website: Dotplays.com
-                        </a>
-                        <a href="mailto:contact@dotplays.com" class="author-link">
-                            📧 Email: contact@dotplays.com
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Testimonials -->
-        <div class="testimonials">
-            <h2 class="section-title">⭐ Đánh Giá Từ Độc Giả</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial">
-                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "Cuốn sách này thực sự độc đáo! Cách kết hợp lịch sử La Mã với bài học kinh doanh hiện đại thật sự sáng tạo. 
-                        Mỗi chương đều có câu chuyện hấp dẫn và bài học thực tế mà tôi có thể áp dụng ngay."
-                    </p>
-                    <p class="testimonial-author">— Nguyễn Văn A, Doanh nhân</p>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "Tôi đã đọc nhiều sách về kinh doanh, nhưng chưa có cuốn nào kết hợp lịch sử và kinh doanh một cách thú vị như thế này. 
-                        Rất khuyến khích cho các doanh nhân trẻ!"
-                    </p>
-                    <p class="testimonial-author">— Trần Thị B, Startup Founder</p>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "Bài học từ lịch sử La Mã thật sự có giá trị. Tác giả đã chuyển đổi những câu chuyện cổ xưa thành 
-                        bài học kinh doanh hiện đại một cách xuất sắc."
-                    </p>
-                    <p class="testimonial-author">— Lê Văn C, Giám đốc Marketing</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div id="contact" class="contact-section">
-            <h2 class="section-title">📧 Liên Hệ</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Hãy Liên Hệ Với Chúng Tôi</h3>
-                    <p>Bạn có câu hỏi về cuốn sách hoặc muốn hợp tác? Hãy liên hệ với chúng tôi!</p>
-                    
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <span class="contact-icon">📧</span>
-                            <div>
-                                <h4>Email</h4>
-                                <p>contact@dotplays.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <span class="contact-icon">🌐</span>
-                            <div>
-                                <h4>Website</h4>
-                                <p>dotplays.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <span class="contact-icon">📱</span>
-                            <div>
-                                <h4>Social Media</h4>
-                                <p>Facebook, LinkedIn</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Họ và tên</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Chủ đề</label>
-                            <select id="subject" name="subject">
-                                <option value="feedback">Phản hồi về sách</option>
-                                <option value="collaboration">Hợp tác</option>
-                                <option value="question">Câu hỏi</option>
-                                <option value="other">Khác</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Nội dung</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Gửi Tin Nhắn</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>📚 Con Đường Đến Giàu Có</h4>
-                    <p>Những bài học từ Đế chế La Mã Cổ đại</p>
-                    <p>Tác giả: Nguyễn Hữu Huy</p>
-                </div>
-                <div class="footer-section">
-                    <h4>🔗 Liên Kết</h4>
-                    <ul>
-                        <li><a href="index.html">🏠 Trang Chủ</a></li>
-                        <li><a href="#about">📖 Giới Thiệu</a></li>
-                        <li><a href="#chapters">📋 Mục Lục</a></li>
-                        <li><a href="#author">✍️ Tác Giả</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>📧 Liên Hệ</h4>
-                    <ul>
-                        <li>📧 contact@dotplays.com</li>
-                        <li>🌐 dotplays.com</li>
-                        <li>📱 Social Media</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2024 Nguyễn Hữu Huy - <a href="https://dotplays.com" target="_blank">Dotplays.com</a></p>
-                <p>"Nơi kiến thức gặp gỡ sự sáng tạo"</p>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Mobile menu toggle
-        const hamburger = document.querySelector(".hamburger");
-        const navMenu = document.querySelector(".nav-menu");
-
-        hamburger.addEventListener("click", () => {
-            hamburger.classList.toggle("active");
-            navMenu.classList.toggle("active");
-        });
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-            hamburger.classList.remove("active");
-            navMenu.classList.remove("active");
-        }));
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Form submission
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.');
-        });
-
-        // Add active class to current nav item
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section, div[id]');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
-</body>
-<body>
         <!-- Navigation Menu -->
         <nav class="navbar">
             <div class="nav-container">
